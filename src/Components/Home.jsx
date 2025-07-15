@@ -45,7 +45,7 @@ const Home = () => {
     <div>
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div key={index} className="w-full bg-gray-50 h-[540px]">
+          <div key={index} className="w-full bg-gray-50 md:h-[540px]">
             <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-6 py-12 md:mt-16 h-auto">
               <div className="md:w-1/2 text-center md:text-left">
                 <h1 className="text-4xl md:text-5xl font-bold mb-4">
