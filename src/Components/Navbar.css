@@ -1,0 +1,7 @@
+.nav-link {
+    font-weight: 700;
+    border-bottom: 3px solid white;
+}
+.nav-link:hover {
+  border-bottom: 3px solid rgba(255,255,255,0.5);
+}
