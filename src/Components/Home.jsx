@@ -34,7 +34,7 @@ const Home = () => {
       button: "Shop Now",
     },
     {
-      title: "30% ff on Kids' Wear",
+      title: "30% off on Kids' Wear",
       description:
         "Make your little ones shine with our adorable and comfy kids' collection. From playful prints to everyday essentials, enjoy 30% off on outfits designed for fun and movement. Perfect for every season and every adventure.",
       image: shopImg,
