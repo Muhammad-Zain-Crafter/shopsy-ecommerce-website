@@ -24,7 +24,7 @@ const Home = () => {
       description:
         "Refresh your wardrobe with our latest collection of women's fashion. From everyday essentials to elegant statement pieces, enjoy 30% off for a limited time. Style, comfort, and savings — all in one place.",
       image: womenImage,
-      button: "Order Now",
+      button: "Shop Now",
     },
     {
       title: "50% off on Men's Wear",
