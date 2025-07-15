@@ -48,13 +48,13 @@ const Footer = () => {
             {/* Location */}
             <div className="flex items-center space-x-2 text-sm">
               <HiLocationMarker className="text-lg" />
-              <span>Noida, Uttar Pradesh</span>
+              <span>Karachi, Pakistan</span>
             </div>
 
             {/* Phone */}
             <div className="flex items-center space-x-2 text-sm">
               <HiPhone className="text-lg" />
-              <span>+91 123456789</span>
+              <span>+92 234554672</span>
             </div>
           </div>
         </div>
