@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 import { useState } from "react";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 
-const Navbar = ({cartItems}) => {
+const Navbar = ({ cartItems }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -50,12 +50,10 @@ const Navbar = ({cartItems}) => {
         >
           Reviews
         </NavLink>
-        <NavLink 
-          to={"/cart"}
-        >
+        <NavLink to={"/cart"}>
           <div className="flex items-center gap-1 bg-white text-black p-0.5 px-1 rounded-lg font-semibold text-center">
             <ShoppingCartIcon className="w-5 h-5" />
-            Cart {(cartItems.length)}
+            Cart {cartItems.length}
           </div>
         </NavLink>
       </div>
@@ -96,12 +94,10 @@ const Navbar = ({cartItems}) => {
           >
             Reviews
           </NavLink>
-          <NavLink 
-            to="/cart"
-           onClick={() => setMenuOpen(false)}>
+          <NavLink to="/cart" onClick={() => setMenuOpen(false)}>
             <div className="flex items-center gap-1 bg-white text-black p-0.5 px-1 rounded-lg font-bold text-center">
-              <ShoppingCartIcon className="w-5 h-5" />
-              Cart {(cartItems.length)}
+              <ShoppingCartIcon className="w-6 h-5" />
+              Cart {cartItems.length}
             </div>
           </NavLink>
         </div>

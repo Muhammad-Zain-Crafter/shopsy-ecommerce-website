@@ -19,7 +19,6 @@ const Product = ({ addToCart }) => {
       rating: 4.5,
       price: 25,
     },
-
     {
       id: 2,
       image: women2,
@@ -79,7 +78,7 @@ const Product = ({ addToCart }) => {
     {
       id: 9,
       image: shirt5,
-      title: "Summer Linen Shirt",
+      title: "Linen Shirt",
       color: "Beige",
       rating: 5,
       price: 45,
@@ -131,10 +130,10 @@ const Product = ({ addToCart }) => {
                 Order Now
               </button>
               <button
-                onClick={() => {addToCart(product);
-                  alert(`${product.title} added to cart!`)
-                }
-                }
+                onClick={() => {
+                  addToCart(product);
+                  alert(`${product.title} added to cart!`);
+                }}
                 className="bg-green-500 text-white font-semibold text-sm py-1 px-2 rounded-lg mt-2 hover:bg-green-400
               "
               >
