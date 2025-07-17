@@ -4,8 +4,12 @@ import womenImage from "../assets/hero/women.png";
 import menImage from "../assets/hero/sale.png";
 import shopImg from "../assets/hero/shopping.png";
 import img from "../assets/women/women2.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+
+  const navigate = useNavigate();
+
   const settings = {
     infinite: true,
     autoplay: true,
@@ -52,7 +56,8 @@ const Home = () => {
                   {slide.title}
                 </h1>
                 <p className="mb-6">{slide.description}</p>
-                <button className="bg-orange-500 text-white px-4 py-2 rounded-xl hover:bg-orange-600">
+                <button onClick={() => navigate("/products")}
+                className="bg-orange-500 text-white px-4 py-2 rounded-xl hover:bg-orange-600">
                   {slide.button}
                 </button>
               </div>
