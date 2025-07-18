@@ -1,9 +1,10 @@
 import React from "react";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 import { FaTrash } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Cart = ({ cartItems, removeFromCart, increaseQty, decreaseQty }) => {
-
+  const navigate = useNavigate();
   const totalPrice = cartItems.reduce(
     (total, item) => total + item.price * item.quantity,
     0
@@ -42,7 +43,7 @@ const Cart = ({ cartItems, removeFromCart, increaseQty, decreaseQty }) => {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-row items-center gap-4">
+              <div className="flex flex-row items-center md:gap-4 gap-2">
                 <button
                   onClick={() => increaseQty(item.id)}
                   className="text-2xl text-red-600"
@@ -71,7 +72,8 @@ const Cart = ({ cartItems, removeFromCart, increaseQty, decreaseQty }) => {
             <h2 className="text-2xl font-bold">
               Total: <span className="text-green-600">${totalPrice}</span>
             </h2>
-            <button className="mt-4 bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600">
+            <button onClick={() => navigate('/checkout')}
+            className="mt-4 bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600">
               Proceed to Checkout
             </button>
           </div>

@@ -100,7 +100,8 @@ const Reviews = () => {
         {reviews.map((review) => (
           <div
             key={review.id}
-            className="rounded-lg p-5 text-center shadow-xl border-0 bg-gradient-to-br from-orange-400 via-red-400 to-amber-300 text-white">
+            className="rounded-lg p-5 text-center shadow-xl border-0 bg-gradient-to-br from-orange-400 via-red-400 to-amber-300 text-white"
+          >
             <img
               src={review.image}
               alt={review.name}

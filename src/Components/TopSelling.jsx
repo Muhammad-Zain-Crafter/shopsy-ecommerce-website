@@ -73,7 +73,8 @@ const TopSelling = () => {
         <button
           onClick={() => navigate("/products")}
           className="p-4 text-sm bg-orange-400 text-white font-bold rounded-xl mt-12
-             md:w-48 md:hover:bg-amber-400">
+             md:w-48 md:hover:bg-amber-400"
+        >
           View All Products
         </button>
       </center>

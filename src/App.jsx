@@ -11,6 +11,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Cart from "./Components/Cart";
 import { useState } from "react";
+import Checkout from "./Components/Checkout";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -76,6 +77,16 @@ function App() {
             increaseQty={increaseQty}
             decreaseQty={decreaseQty}
           />
+        </div>
+      ),
+    },
+    {
+      path: "/checkout",
+      element: (
+        <div>
+          <Navbar cartItems={cartItems} />
+          <Checkout />
+          <Footer />
         </div>
       ),
     },
