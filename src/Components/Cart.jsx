@@ -72,8 +72,10 @@ const Cart = ({ cartItems, removeFromCart, increaseQty, decreaseQty }) => {
             <h2 className="text-2xl font-bold">
               Total: <span className="text-green-600">${totalPrice}</span>
             </h2>
-            <button onClick={() => navigate('/checkout')}
-            className="mt-4 bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600">
+            <button
+              onClick={() => navigate("/checkout")}
+              className="mt-4 bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600"
+            >
               Proceed to Checkout
             </button>
           </div>
